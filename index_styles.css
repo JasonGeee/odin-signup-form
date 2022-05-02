@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --left-side: 48px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    height: 100vh;
+}
+
+/* Image Content */
+
+.column-left {
+    flex: 3;
+    color: white;
+    background-image: url(jarand-k-lokeland-3-MftKobVtg-unsplash.jpeg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;    
+    width: 100%;
+    margin-top: 20vh;
+    padding: 16px 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.img img {
+    height: 28vh;
+}
+
+a {
+    color: white;
+}
+
+/* Text Content */
+
+.column-right {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9fafb;
+    /* border: 2px solid red; */
+}
+
+.information {
+    /* border: 2px solid red; */
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 15vh;
+    margin-right: 48px;
+    margin-left: var(--left-side);
+    max-width: 75ch;
+}
+
+.form {
+    /* border: 2px solid red; */
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-left: var(--left-side);
+    margin-bottom: 16px;
+    padding-bottom: 28px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.input-container {
+    display: flex;
+    gap: 8rem;
+}
+
+.form-left {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-right {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    display: block;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 10px 10px;
+    width: 15vw;
+    height: 3vh;
+}
+
+input:focus {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.error_message {
+    font-size: 0.8rem;
+    color: red;
+    margin-top: -0.1px;
+}
+
+.bottom-container {
+    margin-top: 16px;
+    margin-left: var(--left-side);
+}
+
+button {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #596D48;
+    padding: 16px 48px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.bottom-container > p {
+    font-size: 1.1rem;
+    margin-top: 28px;
+}
+
+.bottom-container > p > a {
+    font-weight: 700;
+    color:#596D48;
+    text-decoration: none;
+}
